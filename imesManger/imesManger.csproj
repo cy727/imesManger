@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA0DFF57-43CD-4DB6-9261-145F54103836}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>imesManger</RootNamespace>
+    <AssemblyName>imesManger</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>imes1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBoxIm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBoxIm.Designer.cs">
+      <DependentUpon>AboutBoxIm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassIm.cs" />
+    <Compile Include="FormAcquire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAcquire.Designer.cs">
+      <DependentUpon>FormAcquire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuyer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuyer.Designer.cs">
+      <DependentUpon>FormBuyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDatabaseSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDatabaseSet.designer.cs">
+      <DependentUpon>formDatabaseSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageOffline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageOffline.Designer.cs">
+      <DependentUpon>FormManageOffline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportData.Designer.cs">
+      <DependentUpon>FormImportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImportDataOffLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImportDataOffLine.Designer.cs">
+      <DependentUpon>FormImportDataOffLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIndentors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIndentors.Designer.cs">
+      <DependentUpon>FormIndentors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIndentor_CARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIndentor_CARD.Designer.cs">
+      <DependentUpon>FormIndentor_CARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManage.Designer.cs">
+      <DependentUpon>FormManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManufacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManufacture.Designer.cs">
+      <DependentUpon>FormManufacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNumberInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNumberInput.Designer.cs">
+      <DependentUpon>FormNumberInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormParameter.Designer.cs">
+      <DependentUpon>FormParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduct_CARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduct_CARD.designer.cs">
+      <DependentUpon>FormProduct_CARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProducts.designer.cs">
+      <DependentUpon>FormProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTAC.Designer.cs">
+      <DependentUpon>FormTAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTAC_CARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTAC_CARD.Designer.cs">
+      <DependentUpon>FormTAC_CARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIiManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIiManage.Designer.cs">
+      <DependentUpon>MDIiManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDGV.cs" />
+    <Compile Include="PrintOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintOptions.Designer.cs">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBoxIm.resx">
+      <DependentUpon>AboutBoxIm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAcquire.resx">
+      <DependentUpon>FormAcquire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuyer.resx">
+      <DependentUpon>FormBuyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDatabaseSet.resx">
+      <DependentUpon>formDatabaseSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageOffline.resx">
+      <DependentUpon>FormManageOffline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportData.resx">
+      <DependentUpon>FormImportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImportDataOffLine.resx">
+      <DependentUpon>FormImportDataOffLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIndentors.resx">
+      <DependentUpon>FormIndentors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIndentor_CARD.resx">
+      <DependentUpon>FormIndentor_CARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManage.resx">
+      <DependentUpon>FormManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManufacture.resx">
+      <DependentUpon>FormManufacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNumberInput.resx">
+      <DependentUpon>FormNumberInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormParameter.resx">
+      <DependentUpon>FormParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduct_CARD.resx">
+      <DependentUpon>FormProduct_CARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProducts.resx">
+      <DependentUpon>FormProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTAC.resx">
+      <DependentUpon>FormTAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTAC_CARD.resx">
+      <DependentUpon>FormTAC_CARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIiManage.resx">
+      <DependentUpon>MDIiManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintOptions.resx">
+      <DependentUpon>PrintOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20130719053511949_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2013071905351923_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20130719053501383_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imes1.ico" />
+    <None Include="Resources\20130802014223509_easyicon_net_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
